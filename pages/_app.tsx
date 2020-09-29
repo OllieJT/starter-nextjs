@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import Head from "next/head";
-import type { AppProps /*, AppContext */ } from "next/app";
+import type { AppProps /* , AppContext */ } from "next/app";
 
 const meta = {
 	siteName: "todo",
@@ -16,39 +16,39 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 		<>
 			<Head>
 				<meta
+					content="width=device-width,initial-scale=1"
 					key="viewport"
 					name="viewport"
-					content="width=device-width,initial-scale=1"
 				/>
 
-				<link rel="icon" href="/favicon.ico" />
+				<link href="/favicon.ico" rel="icon" />
 
-				<meta property="og:site_name" content={meta.siteName} />
-				<meta property="twitter:site" content={meta.twitter.username} />
-				<meta property="twitter:site:id" content={meta.twitter.id} />
+				<meta content={meta.siteName} property="og:site_name" />
+				<meta content={meta.twitter.username} property="twitter:site" />
+				<meta content={meta.twitter.id} property="twitter:site:id" />
 
 				<meta
+					content={meta.siteName}
 					key="apple-webapp-title"
 					name="apple-mobile-web-app-title"
-					content={meta.siteName}
 				/>
 				<meta
+					content="yes"
 					key="apple-webapp-capable"
 					name="apple-mobile-web-app-capable"
-					content="yes"
 				/>
 				<meta
+					content="yes"
 					key="apple-touch-fullscreen"
 					name="apple-touch-fullscreen"
-					content="yes"
 				/>
 				<meta
+					content="black"
 					key="apple-webapp-style"
 					name="apple-mobile-web-app-status-bar-style"
-					content="black"
 				/>
-				<meta key="designer" name="designer" content="OllieJT <olliejt.com>" />
-				<link rel="bookmark" title={meta.siteName} href={meta.siteUrl} />
+				<meta content="OllieJT <olliejt.com>" key="designer" name="designer" />
+				<link href={meta.siteUrl} rel="bookmark" title={meta.siteName} />
 			</Head>
 			<Component {...pageProps} />
 		</>
