@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "next-env.d.ts": true,
+    "package-lock.json": true,
+    ".next": true
+  }
+}
