@@ -1,4 +1,5 @@
-import "../styles/globals.css";
+import "../../styles/index.css";
+import React from "react";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 
@@ -11,7 +12,7 @@ const meta = {
 	}
 };
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 	return (
 		<>
 			<Head>

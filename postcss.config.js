@@ -20,5 +20,5 @@ const prodPlugins = isProd
 	: [];
 
 module.exports = {
-	plugins: ["postcss-nested", ...prodPlugins]
+	plugins: ["postcss-import", "tailwindcss", "postcss-nested", ...prodPlugins]
 };

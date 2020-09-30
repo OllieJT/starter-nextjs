@@ -5,6 +5,13 @@
 		".next": true
 	},
 	"files.associations": {
-		"*.css": "postcss"
-	}
+		//"*.css": "postcss"
+	},
+	"files.watcherExclude": {
+		"**/node_modules": true
+	},
+	"css.customData": [".vscode/css_custom_data.json"],
+	"tailwindCSS.colorDecorators": "on",
+	"tailwindCSS.lint.invalidTailwindDirective": "ignore",
+	"tailwindCSS.lint.invalidApply": "ignore"
 }
