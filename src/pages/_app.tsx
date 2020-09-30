@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../../styles/index.css";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 
