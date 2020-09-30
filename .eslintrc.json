@@ -1,10 +1,18 @@
 {
+	"parser": "@typescript-eslint/parser",
 	"env": {
 		"browser": true,
 		"es2021": true
 	},
-	"extends": ["plugin:react/recommended", "airbnb", "prettier"],
-	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier/@typescript-eslint",
+		"airbnb",
+		"plugin:prettier/recommended",
+		"prettier"
+	],
+	"plugins": ["react", "@typescript-eslint"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -12,8 +20,18 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": ["react", "@typescript-eslint"],
 	"rules": {
+		"import/prefer-default-export": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
 		"no-mixed-spaces-and-tabs": "error",
 		"no-tabs": 0,
 		"react/jsx-sort-default-props": 1,
@@ -40,7 +58,19 @@
 		"react/jsx-filename-extension": [
 			2,
 			{ "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-		]
+		],
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": ["error"]
 	},
-	"ignorePatterns": ["node_modules/**/*"]
+	"settings": {
+		"react": {
+			"version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+		},
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"ignorePatterns": ["node_modules/**/*", "next.config.js"]
 }
