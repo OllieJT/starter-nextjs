@@ -33,16 +33,14 @@ const Home = () => {
 
 					<a
 						className={styles.card}
-						href="https://github.com/vercel/next.js/tree/master/examples"
-					>
+						href="https://github.com/vercel/next.js/tree/master/examples">
 						<h3>Examples &rarr;</h3>
 						<p>Discover and deploy boilerplate example Next.js projects.</p>
 					</a>
 
 					<a
 						className={styles.card}
-						href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					>
+						href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
 						<h3>Deploy &rarr;</h3>
 						<p>
 							Instantly deploy your Next.js site to a public URL with
@@ -56,8 +54,7 @@ const Home = () => {
 				<a
 					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
 					rel="noopener noreferrer"
-					target="_blank"
-				>
+					target="_blank">
 					Powered by{" "}
 					<img alt="Vercel Logo" className={styles.logo} src="/vercel.svg" />
 				</a>
