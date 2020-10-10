@@ -12,7 +12,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint --fix --ext .js,.ts,.jsx,.tsx src",
-		"format": "prettier --write --plugin-search-dir=. './src/**/*.{js,jsx,ts,tsx}'"
+		"format": "prettier --write --plugin-search-dir=. './src/**/*.{js,jsx,ts,tsx}'",
+		"ts": "tsc --pretty --noImplicitAny"
 	},
 	"dependencies": {
 		"@types/styled-components": "^5.1.3",
