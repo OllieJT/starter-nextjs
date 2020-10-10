@@ -35,21 +35,9 @@
 		"no-mixed-spaces-and-tabs": "error",
 		"no-tabs": 0,
 		"react/jsx-sort-default-props": 1,
-		"react/jsx-sort-props": [
-			1,
-			{
-				"noSortAlphabetically": false
-			}
-		],
-		"react/sort-comp": 1,
-		"react/sort-prop-types": [
-			1,
-			{
-				"requiredFirst": true,
-				"noSortAlphabetically": false
-			}
-		],
-
+		// "react/jsx-sort-props": [1, { "noSortAlphabetically": false }],
+		// "react/sort-comp": 1,
+		// "react/sort-prop-types": [1,{"requiredFirst": true,"noSortAlphabetically": false}],
 		"react/jsx-indent": [1, "tab"],
 		"react/jsx-indent-props": [1, "tab"],
 		"react/jsx-one-expression-per-line": 0,
@@ -60,7 +48,13 @@
 			{ "extensions": [".js", ".jsx", ".ts", ".tsx"] }
 		],
 		"no-use-before-define": "off",
-		"@typescript-eslint/no-use-before-define": ["error"]
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"no-shadow": "off",
+		"@typescript-eslint/no-shadow": ["error"],
+		"react/require-default-props": [
+			1,
+			{ "forbidDefaultForRequired": true, "ignoreFunctionalComponents": true }
+		]
 	},
 	"settings": {
 		"react": {
