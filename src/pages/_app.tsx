@@ -8,8 +8,8 @@ const meta = {
 	siteUrl: "todo",
 	twitter: {
 		username: "TheOllieJT",
-		id: "427323948"
-	}
+		id: "427323948",
+	},
 };
 
 const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {

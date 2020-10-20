@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 export const HelloWorld = async (
 	req: NextApiRequest,
-	res: NextApiResponse<any>
+	res: NextApiResponse<any>,
 ): Promise<void> => {
 	const { name } = req.query;
 
