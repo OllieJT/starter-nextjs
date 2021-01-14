@@ -16,7 +16,7 @@
 		/* type-checking */
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
-		"noImplicitAny": false,
+		"noImplicitAny": true,
 		"noImplicitThis": true,
 
 		/* clean-code */
@@ -27,5 +27,5 @@
 		"noFallthroughCasesInSwitch": true
 	},
 	"exclude": ["node_modules"],
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./@types/**/*"]
 }
