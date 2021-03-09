@@ -4,53 +4,16 @@
 	"description": "TODO",
 	"icons": [
 		{
-			"src": "/touch-icons/app-icon-192.png",
+			"src": "/icon/android-chrome-192x192",
 			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "maskable"
 		},
 		{
-			"src": "/touch-icons/app-icon-256.png",
-			"sizes": "256x256",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-		{
-			"src": "/touch-icons/app-icon-512.png",
+			"src": "/icon/android-chrome-512x512",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
-		},
-		{
-			"src": "/touch-icons/app-icon-800.png",
-			"sizes": "800x800",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-
-		{
-			"src": "/touch-icons/logo-render-192.png",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "monochrome"
-		},
-		{
-			"src": "/touch-icons/logo-render-256.png",
-			"sizes": "256x256",
-			"type": "image/png",
-			"purpose": "monochrome"
-		},
-		{
-			"src": "/touch-icons/logo-render-512.png",
-			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "monochrome"
-		},
-		{
-			"src": "/touch-icons/logo-render-800.png",
-			"sizes": "800x800",
-			"type": "image/png",
-			"purpose": "monochrome"
 		}
 	],
 	"start_url": "/?source=pwa",
