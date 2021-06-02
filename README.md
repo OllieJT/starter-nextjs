@@ -1,16 +1,12 @@
-This is a Typescript-[Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# olliejt/starter-nextjs
 
-# olliejt-starter-nextjs
+_Project bootstrapped with [`starter-nextjs`](https://github.com/OllieJT/starter-nextjs)._
 
-This is a React project using [Next.js](https://nextjs.org/). project bootstrapped with [`starter-nextjs`](https://github.com/OllieJT/starter-nextjs).
-
-## Author
-
-Built by Ollie Taylor ([OllieJT](https://github.com/OllieJT))
+This is a Typescript-[Next.js](https://nextjs.org/) by [OllieJT](https://github.com/OllieJT).
 
 ## Get started
 
-```zsh
+```bash
 npx degit github:OllieJT/starter-nextjs YOUR_PROJECT_NAME
 ```
 
