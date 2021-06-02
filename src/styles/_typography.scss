@@ -1,0 +1,181 @@
+html {
+	font-size: 56.25%;
+	font-feature-settings: "cv09" on, "cv08" on, "cv04" on, "cv03" on, "cpsp" on,
+		"case" on;
+}
+
+/*
+	* Text Weights
+*/
+@mixin FontWeightRegular() {
+	font-weight: var(--font-weight-reg);
+	bold,
+	strong,
+	b {
+		font-weight: var(--font-weight-medium);
+	}
+}
+@mixin FontWeightMedium() {
+	font-weight: var(--font-weight-medium);
+	bold,
+	strong,
+	b {
+		font-weight: var(--font-weight-bold);
+	}
+}
+@mixin FontWeightBold() {
+	font-weight: var(--font-weight-medium);
+	bold,
+	strong,
+	b {
+		text-decoration: wavy;
+	}
+}
+
+/*
+	* Text Styles
+*/
+@mixin Hero_Large($lh: 1em) {
+	font-size: var(--font-size-xxxlg);
+	line-height: $lh;
+	@include FontWeightBold();
+}
+@mixin Hero_Small($lh: 1em) {
+	font-size: var(--font-size-xxlg);
+	line-height: $lh;
+	@include FontWeightMedium();
+}
+
+@mixin title($lh: 1.2emem) {
+	font-size: var(--font-size-xlg);
+	line-height: $lh;
+	@include FontWeightBold();
+}
+
+@mixin Headline_Large($lh: 1.2emem) {
+	font-size: var(--font-size-lg);
+	line-height: $lh;
+	@include FontWeightBold();
+}
+@mixin Headline_Small($lh: 1.2emem) {
+	font-size: var(--font-size-reg);
+	line-height: $lh;
+	@include FontWeightMedium();
+}
+
+@mixin Body_Large($lh: 2em) {
+	font-size: var(--font-size-reg);
+	line-height: $lh;
+	@include FontWeightRegular();
+}
+@mixin Body_Small($lh: 2em) {
+	font-size: var(--font-size-sm);
+	line-height: $lh;
+	@include FontWeightRegular();
+}
+
+@mixin label($lh: 1em) {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	line-height: $lh;
+	@include FontWeightMedium();
+}
+@mixin caption($lh: 2em) {
+	font-size: var(--font-size-xsm);
+	line-height: $lh;
+	@include FontWeightRegular();
+}
+
+body {
+	font-family: var(--font-primary), -apple-system, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+
+	color: var(--content-secondary);
+	background-color: var(--background);
+
+	@include Body_Small(1em);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--content-primary);
+}
+
+h1 {
+	@include Hero_Large();
+}
+h2 {
+	@include Hero_Small();
+}
+h3 {
+	@include title();
+}
+h4 {
+	@include Headline_Large();
+}
+h5 {
+	@include Headline_Small();
+}
+h6 {
+	@include label();
+}
+p {
+	@include Body_Small();
+}
+
+mark {
+	color: var(--purple);
+}
+
+.rich-text {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		margin: 0.5em 0;
+		&::first-child {
+			margin-top: 0;
+		}
+		&::last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.dark-mode .rich-text {
+	a {
+		color: var(--yellow);
+		&:hover {
+			color: var(--green);
+			opacity: 0.8;
+		}
+	}
+}
+
+.light-mode .rich-text {
+	a {
+		color: var(--purple);
+		&:hover {
+			color: var(--yellow);
+			opacity: 0.8;
+		}
+	}
+}

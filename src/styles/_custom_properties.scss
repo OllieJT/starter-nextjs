@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Blofeld";
+	src: url("/font/blofeld.woff2") format("woff2"),
+		url("/font/blofeld.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--light-background: #ffffff;
+	--light-base: #e7e0f5;
+	--light-content-primary: #170a29;
+	--light-content-secondary: #5e4d80;
+
+	--light-purple: #6e1ae5;
+	--light-yellow: #a37a00;
+	--light-mint: #009966;
+
+	--dark-background: #170a29;
+	--dark-base: #2c0a5c;
+	--dark-content-primary: #ffffff;
+	--dark-content-secondary: #aba3c2;
+
+	--dark-purple: #884dff;
+	--dark-yellow: #ffe14c;
+	--dark-mint: #4cffe2;
+
+	--transition-primary: cubic-bezier(0, 1.4, 0.8, 0.9); /* 0.24s */
+	--transition-secondary: cubic-bezier(0, 1, 0.75, 0.9); /* 0.48s */
+
+	--size-xxsm: 0.4rem;
+	--size-xsm: 0.8rem;
+	--size-sm: 1.2rem;
+	--size-reg: 2rem;
+	--size-lg: 3.2rem;
+	--size-xlg: 4rem;
+	--size-xxlg: 6rem;
+	--size-xxxlg: 8rem;
+	--size-xxxxlg: 12rem;
+
+	--font-size-xxxlg: 8rem;
+	--font-size-xxlg: 5rem;
+	--font-size-xlg: 3.6rem;
+	--font-size-lg: 2.6rem;
+	--font-size-reg: 2rem;
+	--font-size-sm: 1.6rem;
+	--font-size-xsm: 1.2rem;
+
+	--radius-sm: 4px;
+	--radius-reg: 8px;
+	--radius-lg: 16px;
+	--radius-full: 4000px;
+
+	--font-primary: "Inter";
+	--font-secondary: "Blofeld", "Inter";
+
+	--font-weight-reg: 400;
+	--font-weight-medium: 600;
+	--font-weight-bold: 800;
+}
