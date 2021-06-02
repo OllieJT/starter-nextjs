@@ -20,7 +20,8 @@
 	--font: var(--font-primary);
 }
 
-.light-mode {
+.light-mode,
+[data-theme="light"] {
 	--background: var(--light-background);
 	--base: var(--light-base);
 	--content-primary: var(--light-content-primary);
@@ -30,7 +31,8 @@
 	--yellow: var(--light-yellow);
 	--mint: var(--light-mint);
 }
-.dark-mode {
+.dark-mode,
+[data-theme="dark"] {
 	--background: var(--dark-background);
 	--base: var(--dark-base);
 	--content-primary: var(--dark-content-primary);

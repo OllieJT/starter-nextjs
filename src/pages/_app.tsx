@@ -4,6 +4,7 @@ import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 import { DefaultSeo } from "next-seo";
 import { configuration } from "../utility";
+import { ThemeProvider } from "next-themes";
 
 const meta = {
 	siteName: "todo",
@@ -15,6 +16,7 @@ const meta = {
 };
 
 const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
+	// const { theme, setTheme } = useTheme()
 	return (
 		<>
 			<DefaultSeo
@@ -108,7 +110,9 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 					rel="stylesheet"
 				/>
 			</Head>
-			<Component {...pageProps} />
+			<ThemeProvider>
+				<Component {...pageProps} />
+			</ThemeProvider>
 		</>
 	);
 };
