@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps<any> = async () => {
 	return { props: { data } };
 };
 
-const Home = ({ data }): React.ReactElement => {
+const Home = ({ data }: { data: any }): React.ReactElement => {
 	return (
 		<div>
 			<Head>

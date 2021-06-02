@@ -7,6 +7,10 @@
 	},
 	"version": "0.1.0",
 	"private": true,
+	"license": "NONE",
+	"engines": {
+		"node": "14.x"
+	},
 	"scripts": {
 		"analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
 		"analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
