@@ -10,8 +10,8 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"format": "prettier --write",
 		"start": "next start",
-		"format": "prettier --write --plugin-search-dir=. './src/**/*.{js,jsx,ts,tsx}'",
 		"ts": "tsc --pretty --noImplicitAny"
 	},
 	"dependencies": {
