@@ -1,9 +1,3 @@
-html {
-	font-size: 56.25%;
-	font-feature-settings: "cv09" on, "cv08" on, "cv04" on, "cv03" on, "cpsp" on,
-		"case" on;
-}
-
 /*
 	* Text Weights
 */
@@ -24,7 +18,7 @@ html {
 	}
 }
 @mixin FontWeightBold() {
-	font-weight: var(--font-weight-medium);
+	font-weight: var(--font-weight-bold);
 	bold,
 	strong,
 	b {
@@ -46,7 +40,7 @@ html {
 	@include FontWeightMedium();
 }
 
-@mixin title($lh: 1.2emem) {
+@mixin Title($lh: 1.2emem) {
 	font-size: var(--font-size-xlg);
 	line-height: $lh;
 	@include FontWeightBold();
@@ -74,108 +68,14 @@ html {
 	@include FontWeightRegular();
 }
 
-@mixin label($lh: 1em) {
-	font-size: var(--font-size-sm);
-	font-weight: var(--font-weight-medium);
+@mixin Label($lh: 1.5em) {
+	font-size: var(--font-size-xsm);
 	line-height: $lh;
-	@include FontWeightMedium();
+	letter-spacing: 0.04em;
+	@include FontWeightRegular();
 }
-@mixin caption($lh: 2em) {
+@mixin Caption($lh: 2em) {
 	font-size: var(--font-size-xsm);
 	line-height: $lh;
 	@include FontWeightRegular();
-}
-
-body {
-	font-family: var(--font-primary), -apple-system, BlinkMacSystemFont, "Segoe UI",
-		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
-
-	color: var(--content-secondary);
-	background-color: var(--background);
-
-	@include Body_Small(1em);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--content-primary);
-}
-
-h1 {
-	@include Hero_Large();
-}
-h2 {
-	@include Hero_Small();
-}
-h3 {
-	@include title();
-}
-h4 {
-	@include Headline_Large();
-}
-h5 {
-	@include Headline_Small();
-}
-h6 {
-	@include label();
-}
-p {
-	@include Body_Small();
-}
-
-mark {
-	color: var(--purple);
-}
-
-.rich-text {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
-		margin: 0.5em 0;
-		&::first-child {
-			margin-top: 0;
-		}
-		&::last-child {
-			margin-bottom: 0;
-		}
-	}
-}
-
-.dark-mode .rich-text {
-	a {
-		color: var(--yellow);
-		&:hover {
-			color: var(--green);
-			opacity: 0.8;
-		}
-	}
-}
-
-.light-mode .rich-text {
-	a {
-		color: var(--purple);
-		&:hover {
-			color: var(--yellow);
-			opacity: 0.8;
-		}
-	}
 }

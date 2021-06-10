@@ -1,0 +1,70 @@
+/*
+	* Tokens
+	Define ALL your design tokens here
+	 - Colors
+	 - Sizes
+	 - Fonts
+	 - ...etc
+*/
+
+:root {
+	--light-background: #ffffff;
+	--light-base: #e7e0f5;
+	--light-content-primary: #170a29;
+	--light-content-secondary: #5e4d80;
+
+	--light-purple: #6e1ae5;
+	--light-yellow: #a37a00;
+	--light-mint: #009966;
+
+	--dark-background: #170a29;
+	--dark-base: #2c0a5c;
+	--dark-content-primary: #ffffff;
+	--dark-content-secondary: #aba3c2;
+
+	--dark-purple: #884dff;
+	--dark-yellow: #ffe14c;
+	--dark-mint: #4cffe2;
+
+	// Taken from https://easings.co/
+	--transition-sine: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+	--transition-quad: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	--transition-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+	--transition-quart: cubic-bezier(0.77, 0, 0.18, 1);
+	--transition-circ: cubic-bezier(0.79, 0.14, 0.15, 0.86);
+	--transition-quint: cubic-bezier(0.86, 0, 0.07, 1);
+	--transition-expo: cubic-bezier(1, 0, 0, 1);
+	--transition-back: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+	--size-xxxxlg: 27.2rem;
+	--size-xxxlg: 13.6rem;
+	--size-xxlg: 8.4rem;
+	--size-xlg: 5.2rem;
+	--size-lg: 3.2rem;
+	--size-reg: 2rem;
+	--size-sm: 1.2rem;
+	--size-xsm: 0.8rem;
+	--size-xxsm: 0.4rem;
+
+	--font-size-xxxxlg: 8.974rem;
+	--font-size-xxxlg: 6.732rem;
+	--font-size-xxlg: 5.05rem;
+	--font-size-xlg: 3.789rem;
+	--font-size-lg: 2.842rem;
+	--font-size-reg: 2.132rem;
+	--font-size-sm: 1.6rem;
+	--font-size-xsm: 1.2rem;
+
+	--radius-sm: 4px;
+	--radius-reg: 8px;
+	--radius-lg: 16px;
+	--radius-full: 4000px;
+
+	// You can include fallbacks here
+	--font-primary: "Inter";
+	--font-secondary: "Inter", "Inter";
+
+	--font-weight-reg: 400;
+	--font-weight-medium: 600;
+	--font-weight-bold: 800;
+}

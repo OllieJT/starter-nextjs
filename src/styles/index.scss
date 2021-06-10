@@ -1,4 +1,4 @@
-@import "./normalize";
+@import "./system/a-normalize";
 
 /*
 	* Custom Normalize
@@ -15,6 +15,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-@import "./custom_properties";
-@import "./theme";
-@import "./typography";
+@import "./system/b-tokens";
+@import "./system/c-theme";
+@import "./system/d-text";
