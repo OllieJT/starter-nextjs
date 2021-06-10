@@ -20,6 +20,15 @@ npx degit github:OllieJT/starter-nextjs YOUR_PROJECT_NAME
 | `format` | Format all files in /src with prettier    |
 | `ts`     | Check for typescript errors               |
 
+### Init steps
+
+1. [ ] Rename `example.env` to `.env`
+2. [ ] Replace favicon and icons in `./public/img/icon/...`
+3. [ ] Update manifest details in `./public/manifest.json`
+4. [ ] Update app details in `./src/utility/constants.ts`
+5. [ ] Set design tokens as css custom properties in `./src/styles/system/_b-tokens.scss`
+6. [ ] Define themes using the css custom properties in `./src/styles/system/_c-theme.scss`
+
 ### Developing
 
 First, run the development server:
