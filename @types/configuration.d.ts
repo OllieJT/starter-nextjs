@@ -1,4 +1,4 @@
-interface MetadataConfiguration {
+declare interface MetadataConfiguration {
 	color: string;
 	site_name: string;
 	site_url: string;
