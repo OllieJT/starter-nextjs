@@ -1,4 +1,13 @@
-@import "./system/a-normalize";
+@forward "./mixins/typorgraphy";
+// @use './styles' as *
+
+@import "./variables/colors";
+@import "./variables/size";
+@import "./variables/animation";
+@import "./variables/theme";
+
+@import "./base/normalize";
+@import "./base/typography";
 
 /*
 	* Custom Normalize
@@ -15,6 +24,41 @@ html {
 	scroll-behavior: smooth;
 }
 
-@import "./system/b-tokens";
-@import "./system/c-theme";
-@import "./system/d-text";
+/*
+	.light-mode
+	When manually set to an element
+
+	[color-scheme="light"]
+	Whent the HTML element has a theme applied to it
+
+	[data-theme="light"]
+	When Next-Themes applies a data attribute to the <body/>
+*/
+
+.light-mode,
+[color-scheme="light"],
+[data-theme="light"] {
+	color-scheme: light;
+	--background: var(--light-background);
+	--base: var(--light-base);
+	--content-primary: var(--light-content-primary);
+	--content-secondary: var(--light-content-secondary);
+
+	--purple: var(--light-purple);
+	--yellow: var(--light-yellow);
+	--mint: var(--light-mint);
+}
+
+.dark-mode,
+[color-scheme="dark"],
+[data-theme="dark"] {
+	color-scheme: dark;
+	--background: var(--dark-background);
+	--base: var(--dark-base);
+	--content-primary: var(--dark-content-primary);
+	--content-secondary: var(--dark-content-secondary);
+
+	--purple: var(--dark-purple);
+	--yellow: var(--dark-yellow);
+	--mint: var(--dark-mint);
+}

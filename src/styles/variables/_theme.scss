@@ -1,0 +1,26 @@
+:root {
+	--font-primary: "Inter";
+	--font-secondary: "Inter", "Inter";
+	--font: var(--font-primary);
+
+	--font-weight-reg: 400;
+	--font-weight-medium: 600;
+	--font-weight-bold: 800;
+
+	--background: var(--light-background);
+	--base: var(--light-base);
+	--content-primary: var(--light-content-primary);
+	--content-secondary: var(--light-content-secondary);
+
+	--purple: var(--light-purple);
+	--yellow: var(--light-yellow);
+	--mint: var(--light-mint);
+
+	/* Sizes */
+	--layout-width: 1200px;
+	--layout-gutter: var(--size-reg); // 20px
+	--layout-margin: calc(var(--layout-gutter) * 2); // 40px
+	--layout-maxwidth: calc(var(--layout-width) + calc(var(--layout-gutter) * 2));
+
+	--transition: var(--transition-primary);
+}
