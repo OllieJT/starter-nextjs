@@ -7,14 +7,27 @@
 	--font-weight-medium: 600;
 	--font-weight-bold: 800;
 
-	--background: var(--light-background);
-	--base: var(--light-base);
-	--content-primary: var(--light-content-primary);
-	--content-secondary: var(--light-content-secondary);
+	--bg: var(--dark-surface-background);
+	--bg-base: var(--dark-surface-base);
 
-	--purple: var(--light-purple);
-	--yellow: var(--light-yellow);
-	--mint: var(--light-mint);
+	--bg-red: var(--dark-surface-red);
+	--bg-blue: var(--dark-surface-blue);
+	--bg-green: var(--dark-surface-green);
+	--bg-purple: var(--dark-surface-purple);
+	--bg-yellow: var(--dark-surface-yellow);
+
+	--fg: var(--dark-content-primary);
+	--fg-content: var(--dark-content-secondary);
+	--fg-detail: var(--dark-content-alternate);
+
+	--fg-red: var(--dark-content-red);
+	--fg-blue: var(--dark-content-blue);
+	--fg-green: var(--dark-content-green);
+	--fg-purple: var(--dark-content-purple);
+	--fg-yellow: var(--dark-content-yellow);
+
+	--bg-primary: var(--dark-surface-red);
+	--fg-primary: var(--dark-content-red);
 
 	/* Sizes */
 	--layout-width: 1200px;

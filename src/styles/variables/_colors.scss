@@ -1,44 +1,43 @@
 :root {
-	--color-base-100: hsl(230, 0%, 100%),
-	--color-base-200: hsl(230, 0%, 95%),
-	--color-base-300: hsl(230, 0%, 85%),
-	--color-base-400: hsl(230, 2%, 65%),
-	--color-base-500: hsl(230, 4%, 45%),
-	--color-base-600: hsl(230, 8%, 28%),
-	--color-base-700: hsl(230, 16%, 16%),
-	--color-base-800: hsl(230, 32%, 8%),
-	--color-base-900: hsl(230, 64%, 0%),
+	--color-base-100: hsl(230, 0%, 100%);
+	--color-base-200: hsl(230, 0%, 95%);
+	--color-base-300: hsl(230, 0%, 85%);
+	--color-base-400: hsl(230, 2%, 65%);
+	--color-base-500: hsl(230, 4%, 45%);
+	--color-base-600: hsl(230, 8%, 28%);
+	--color-base-700: hsl(230, 16%, 16%);
+	--color-base-800: hsl(230, 32%, 8%);
+	--color-base-900: hsl(230, 64%, 0%);
 
-	--color-red-200: hsla(350, 100%, 80%, 1),
-	--color-red-400: hsla(350, 100%, 65%, 1),
-	--color-red-500: hsla(350, 100%, 45%, 1),
-	--color-red-600: hsla(350, 100%, 30%, 1),
-	--color-red-800: hsla(350, 100%, 15%, 1),
+	--color-red-200: hsla(350, 100%, 80%, 1);
+	--color-red-400: hsla(350, 100%, 65%, 1);
+	--color-red-500: hsla(350, 100%, 45%, 1);
+	--color-red-600: hsla(350, 100%, 30%, 1);
+	--color-red-800: hsla(350, 100%, 15%, 1);
 
-	--color-blue-200: hsla(200, 100%, 80%, 1),
-	--color-blue-400: hsla(200, 100%, 65%, 1),
-	--color-blue-500: hsla(200, 100%, 45%, 1),
-	--color-blue-600: hsla(200, 100%, 30%, 1),
-	--color-blue-800: hsla(200, 100%, 15%, 1),
+	--color-blue-200: hsla(200, 100%, 80%, 1);
+	--color-blue-400: hsla(200, 100%, 65%, 1);
+	--color-blue-500: hsla(200, 100%, 45%, 1);
+	--color-blue-600: hsla(200, 100%, 30%, 1);
+	--color-blue-800: hsla(200, 100%, 15%, 1);
 
-	--color-green-200: hsla(160, 100%, 75%, 1),
-	--color-green-400: hsla(160, 100%, 50%, 1),
-	--color-green-500: hsla(160, 100%, 35%, 1),
-	--color-green-600: hsla(160, 100%, 20%, 1),
-	--color-green-800: hsla(160, 100%, 10%, 1),
+	--color-green-200: hsla(160, 100%, 75%, 1);
+	--color-green-400: hsla(160, 100%, 50%, 1);
+	--color-green-500: hsla(160, 100%, 35%, 1);
+	--color-green-600: hsla(160, 100%, 20%, 1);
+	--color-green-800: hsla(160, 100%, 10%, 1);
 
-	--color-purple-200: hsla(260, 80%, 80%, 1),
-	--color-purple-400: hsla(260, 80%, 65%, 1),
-	--color-purple-500: hsla(260, 80%, 50%, 1),
-	--color-purple-600: hsla(260, 80%, 32%, 1),
-	--color-purple-800: hsla(260, 80%, 17%, 1),
+	--color-purple-200: hsla(260, 80%, 80%, 1);
+	--color-purple-400: hsla(260, 80%, 65%, 1);
+	--color-purple-500: hsla(260, 80%, 50%, 1);
+	--color-purple-600: hsla(260, 80%, 32%, 1);
+	--color-purple-800: hsla(260, 80%, 17%, 1);
 
-	--color-yellow-200: hsla(50, 100%, 75%, 1),
-	--color-yellow-400: hsla(46, 100%, 50%, 1),
-	--color-yellow-500: hsla(42, 100%, 35%, 1),
-	--color-yellow-600: hsla(38, 100%, 20%, 1),
-	--color-yellow-800: hsla(34, 100%, 10%, 1),
-
+	--color-yellow-200: hsla(50, 100%, 75%, 1);
+	--color-yellow-400: hsla(46, 100%, 50%, 1);
+	--color-yellow-500: hsla(42, 100%, 35%, 1);
+	--color-yellow-600: hsla(38, 100%, 20%, 1);
+	--color-yellow-800: hsla(34, 100%, 10%, 1);
 
 	// Dark Mode
 	--dark-surface-background: var(--color-base-800);

@@ -1,6 +1,3 @@
-@forward "./mixins/typorgraphy";
-// @use './styles' as *
-
 @import "./variables/colors";
 @import "./variables/size";
 @import "./variables/animation";
@@ -39,26 +36,54 @@ html {
 [color-scheme="light"],
 [data-theme="light"] {
 	color-scheme: light;
-	--background: var(--light-background);
-	--base: var(--light-base);
-	--content-primary: var(--light-content-primary);
-	--content-secondary: var(--light-content-secondary);
 
-	--purple: var(--light-purple);
-	--yellow: var(--light-yellow);
-	--mint: var(--light-mint);
+	--bg: var(--light-surface-background);
+	--bg-base: var(--light-surface-base);
+
+	--bg-red: var(--light-surface-red);
+	--bg-blue: var(--light-surface-blue);
+	--bg-green: var(--light-surface-green);
+	--bg-purple: var(--light-surface-purple);
+	--bg-yellow: var(--light-surface-yellow);
+
+	--fg: var(--light-content-primary);
+	--fg-content: var(--light-content-secondary);
+	--fg-detail: var(--light-content-alternate);
+
+	--fg-red: var(--light-content-red);
+	--fg-blue: var(--light-content-blue);
+	--fg-green: var(--light-content-green);
+	--fg-purple: var(--light-content-purple);
+	--fg-yellow: var(--light-content-yellow);
+
+	--bg-primary: var(--light-surface-red);
+	--fg-primary: var(--light-content-red);
 }
 
 .dark-mode,
 [color-scheme="dark"],
 [data-theme="dark"] {
 	color-scheme: dark;
-	--background: var(--dark-background);
-	--base: var(--dark-base);
-	--content-primary: var(--dark-content-primary);
-	--content-secondary: var(--dark-content-secondary);
 
-	--purple: var(--dark-purple);
-	--yellow: var(--dark-yellow);
-	--mint: var(--dark-mint);
+	--bg: var(--dark-surface-background);
+	--bg-base: var(--dark-surface-base);
+
+	--bg-red: var(--dark-surface-red);
+	--bg-blue: var(--dark-surface-blue);
+	--bg-green: var(--dark-surface-green);
+	--bg-purple: var(--dark-surface-purple);
+	--bg-yellow: var(--dark-surface-yellow);
+
+	--fg: var(--dark-content-primary);
+	--fg-content: var(--dark-content-secondary);
+	--fg-detail: var(--dark-content-alternate);
+
+	--fg-red: var(--dark-content-red);
+	--fg-blue: var(--dark-content-blue);
+	--fg-green: var(--dark-content-green);
+	--fg-purple: var(--dark-content-purple);
+	--fg-yellow: var(--dark-content-yellow);
+
+	--bg-primary: var(--dark-surface-red);
+	--fg-primary: var(--dark-content-red);
 }
