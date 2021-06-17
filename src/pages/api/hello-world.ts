@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import { NextApiRequest, NextApiResponse } from "next";
 
 export const HelloWorld = async (
