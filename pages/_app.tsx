@@ -3,11 +3,12 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 import { DefaultSeo } from "next-seo";
+import Script from "next/script";
 import { ThemeProvider } from "next-themes";
 
 const isDev = process.env.NODE_ENV === "development";
 const configuration: MetadataConfiguration = {
-	color: "FFC92A",
+	color: "#FF00FF",
 
 	site_name: "SiteName",
 	site_url: isDev ? "http://localhost:3000" : "todo.todo",
@@ -21,12 +22,16 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 	// const { theme, setTheme } = useTheme()
 	return (
 		<>
+			<Script
+				src="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+				strategy="beforeInteractive"
+			/>
 			<DefaultSeo
 				title={configuration.site_title}
 				titleTemplate={`%s | ${configuration.site_name}`}
 				openGraph={{
 					type: "website",
-					locale: "en_US",
+					locale: "en_US", //en_GB
 					url: configuration.site_url,
 					site_name: configuration.site_name,
 				}}
@@ -90,7 +95,7 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 					rel="bookmark"
 					title={configuration.site_name}
 				/>
-				<link rel="icon" href="/img/icon/favicon.svg" />
+				<link rel="icon" href="/img/favicon.svg" />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
