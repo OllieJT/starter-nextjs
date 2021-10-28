@@ -1,44 +1,58 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"module": "esnext",
-
-		"strict": false,
-		"noEmit": true,
-		"jsx": "preserve",
-		"moduleResolution": "node",
-		"importsNotUsedAsValues": "error",
-		"isolatedModules": true,
-		"resolveJsonModule": true,
-		"sourceMap": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"allowJs": true,
-		"checkJs": true,
-
-		/* type-checking */
-		"strictNullChecks": true,
-		"strictFunctionTypes": true,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-
-		/* clean-code */
-		"forceConsistentCasingInFileNames": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
-
-		"paths": {
-			"@components/*": ["components/*"],
-			"@pages/*": ["src/pages/*"],
-			"@lib/*": ["src/lib/*"],
-			"@styles/*": ["src/styles/*"]
-		}
-	},
-	"exclude": ["node_modules"],
-	"include": ["**/*.d.ts", "**/*.ts", "**/*.tsx"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "strict": false,
+    "noEmit": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "checkJs": true,
+    /* type-checking */
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    /* clean-code */
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ]
+    },
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
