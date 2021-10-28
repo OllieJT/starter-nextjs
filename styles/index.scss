@@ -1,14 +1,21 @@
-@import "./variables/colors";
-@import "./variables/size";
-@import "./variables/animation";
-@import "./variables/theme";
+@use "./mixins" as *;
+@import "./normalize";
+@import "./custom-properties";
 
-@import "./base/normalize";
-@import "./base/typography";
+:root {
+	@include DarkMode;
+}
 
-/*
-	* Custom Normalize
-*/
+.light-mode,
+[color-scheme="light"],
+[data-theme="light"] {
+	@include LightMode;
+}
+.dark-mode,
+[color-scheme="dark"],
+[data-theme="dark"] {
+	@include DarkMode;
+}
 
 *,
 *::before,
@@ -19,71 +26,52 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-size: 62.5%;
+	font-feature-settings: "cv09" on, "cv08" on, "cv04" on, "cv03" on, "cpsp" on, "case" on;
 }
 
-/*
-	.light-mode
-	When manually set to an element
+body {
+	@include Content();
+	line-height: 1em;
 
-	[color-scheme="light"]
-	Whent the HTML element has a theme applied to it
-
-	[data-theme="light"]
-	When Next-Themes applies a data attribute to the <body/>
-*/
-
-.light-mode,
-[color-scheme="light"],
-[data-theme="light"] {
-	color-scheme: light;
-
-	--bg: var(--light-surface-background);
-	--bg-base: var(--light-surface-base);
-
-	--bg-red: var(--light-surface-red);
-	--bg-blue: var(--light-surface-blue);
-	--bg-green: var(--light-surface-green);
-	--bg-purple: var(--light-surface-purple);
-	--bg-yellow: var(--light-surface-yellow);
-
-	--fg: var(--light-content-primary);
-	--fg-content: var(--light-content-secondary);
-	--fg-detail: var(--light-content-alternate);
-
-	--fg-red: var(--light-content-red);
-	--fg-blue: var(--light-content-blue);
-	--fg-green: var(--light-content-green);
-	--fg-purple: var(--light-content-purple);
-	--fg-yellow: var(--light-content-yellow);
-
-	--bg-primary: var(--light-surface-red);
-	--fg-primary: var(--light-content-red);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
-.dark-mode,
-[color-scheme="dark"],
-[data-theme="dark"] {
-	color-scheme: dark;
+a {
+	color: var(--fg-brand);
+	text-decoration: none;
+	&:hover {
+		color: var(--bg-brand);
+		text-decoration: underline;
+	}
+}
 
-	--bg: var(--dark-surface-background);
-	--bg-base: var(--dark-surface-base);
+h1 {
+	@include H1();
+}
+h2 {
+	@include H2();
+}
+h3 {
+	@include H3();
+}
+h4 {
+	@include H4();
+}
+h5 {
+	@include H5();
+}
+h6 {
+	@include H6();
+}
+p,
+blockquote {
+	@include Content();
+}
 
-	--bg-red: var(--dark-surface-red);
-	--bg-blue: var(--dark-surface-blue);
-	--bg-green: var(--dark-surface-green);
-	--bg-purple: var(--dark-surface-purple);
-	--bg-yellow: var(--dark-surface-yellow);
-
-	--fg: var(--dark-content-primary);
-	--fg-content: var(--dark-content-secondary);
-	--fg-detail: var(--dark-content-alternate);
-
-	--fg-red: var(--dark-content-red);
-	--fg-blue: var(--dark-content-blue);
-	--fg-green: var(--dark-content-green);
-	--fg-purple: var(--dark-content-purple);
-	--fg-yellow: var(--dark-content-yellow);
-
-	--bg-primary: var(--dark-surface-red);
-	--fg-primary: var(--dark-content-red);
+pre,
+code,
+kbd {
+	font-family: var(--font-family-mono);
 }
