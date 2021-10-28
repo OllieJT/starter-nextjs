@@ -3,16 +3,18 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 import { DefaultSeo } from "next-seo";
-import { configuration } from "../utility";
 import { ThemeProvider } from "next-themes";
 
-const meta = {
-	siteName: "todo",
-	siteUrl: "todo",
-	twitter: {
-		username: "TheOllieJT",
-		id: "427323948",
-	},
+const isDev = process.env.NODE_ENV === "development";
+const configuration: MetadataConfiguration = {
+	color: "FFC92A",
+
+	site_name: "SiteName",
+	site_url: isDev ? "http://localhost:3000" : "todo.todo",
+	site_title: "Website Title",
+
+	twitter_username: "todo",
+	twitter_id: "todo",
 };
 
 const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
@@ -83,7 +85,11 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 				]}
 			/>
 			<Head>
-				<link href={meta.siteUrl} rel="bookmark" title={meta.siteName} />
+				<link
+					href={configuration.site_url}
+					rel="bookmark"
+					title={configuration.site_name}
+				/>
 				<link rel="icon" href="/img/icon/favicon.svg" />
 				<link
 					rel="apple-touch-icon"
