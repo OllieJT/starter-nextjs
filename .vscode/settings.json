@@ -7,7 +7,8 @@
 		"**/.gitattributes": true,
 		"**/*.Identifier": true,
 		"**/node_modules": true,
-		"**/.next": true
+		"**/.next": true,
+		"next-env.d.ts": true
 	},
 	"files.associations": {
 		"**/*.env*": "dotenv",

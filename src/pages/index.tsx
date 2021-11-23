@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import type { GetServerSideProps } from "next";
-import { ExampleComponent } from "../components/example";
+import { ExampleComponent } from "src/components/example";
 
 export const getServerSideProps: GetServerSideProps<any> = async () => {
 	// Fetch data from external API

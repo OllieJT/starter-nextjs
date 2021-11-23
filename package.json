@@ -1,6 +1,6 @@
 {
 	"name": "olliejt-starter-nextjs",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"private": true,
 	"license": "NONE",
 	"author": {
@@ -23,7 +23,9 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"next": "^12.0.1",
+		"@fontsource/inter": "^4.5.1",
+		"date-fns": "^2.26.0",
+		"next": "^12.0.4",
 		"next-seo": "^4.28.1",
 		"next-themes": "0.0.15",
 		"react": "^17.0.2",
@@ -32,13 +34,13 @@
 		"sass": "^1.43.4"
 	},
 	"devDependencies": {
-		"@next/bundle-analyzer": "^12.0.1",
-		"@types/node": "^16.11.6",
-		"@types/react": "^17.0.33",
+		"@next/bundle-analyzer": "^12.0.4",
+		"@types/node": "^16.11.10",
+		"@types/react": "^17.0.36",
 		"autoprefixer": "^10.4.0",
-		"eslint": "^7.32.0",
-		"eslint-config-next": "^12.0.1",
+		"eslint": "^8.3.0",
+		"eslint-config-next": "^12.0.4",
 		"prettier": "^2.4.1",
-		"typescript": "^4.4.4"
+		"typescript": "^4.5.2"
 	}
 }

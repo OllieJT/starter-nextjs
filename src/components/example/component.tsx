@@ -1,4 +1,4 @@
-import { RichText } from "@components/rich-text";
+import { RichText } from "src/components/rich-text";
 import { useState } from "react";
 import style from "./styles.module.scss";
 
