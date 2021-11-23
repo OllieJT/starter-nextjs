@@ -1,13 +1,13 @@
 {
 	"name": "olliejt-starter-nextjs",
+	"version": "0.1.0",
+	"private": true,
+	"license": "NONE",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
 		"email": "hey@olliejt.com",
 		"url": "https://olliejt.com/"
 	},
-	"version": "0.1.0",
-	"private": true,
-	"license": "NONE",
 	"engines": {
 		"node": "14.x"
 	},
