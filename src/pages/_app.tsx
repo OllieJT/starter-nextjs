@@ -3,8 +3,11 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 import { DefaultSeo } from "next-seo";
-import Script from "next/script";
 import { ThemeProvider } from "next-themes";
+
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
 
 const isDev = process.env.NODE_ENV === "development";
 const configuration: MetadataConfiguration = {
@@ -22,10 +25,6 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 	// const { theme, setTheme } = useTheme()
 	return (
 		<>
-			<Script
-				src="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-				strategy="beforeInteractive"
-			/>
 			<DefaultSeo
 				title={configuration.site_title}
 				titleTemplate={`%s | ${configuration.site_name}`}

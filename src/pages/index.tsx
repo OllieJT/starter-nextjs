@@ -5,7 +5,7 @@ import { ExampleComponent } from "src/components/example";
 
 export const getServerSideProps: GetServerSideProps<any> = async () => {
 	// Fetch data from external API
-	const res = await fetch(`http://localhost:3000/api/hello-world?name=Ollie`);
+	const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/hello-world?name=Ollie`);
 	const data = await res.json();
 
 	// Pass data to the page via props

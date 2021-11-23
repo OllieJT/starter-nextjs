@@ -1,4 +1,5 @@
 @use "./mixins" as *;
+
 @import "./normalize";
 @import "./custom-properties";
 
@@ -6,13 +7,9 @@
 	@include DarkMode;
 }
 
-.light-mode,
-[color-scheme="light"],
 [data-theme="light"] {
 	@include LightMode;
 }
-.dark-mode,
-[color-scheme="dark"],
 [data-theme="dark"] {
 	@include DarkMode;
 }
