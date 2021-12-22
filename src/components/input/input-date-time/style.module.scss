@@ -1,0 +1,72 @@
+.input {
+	outline: none;
+	padding: 0;
+	cursor: text;
+	--input-pad-v: 5px;
+	--input-pad-h: 10px;
+	--input-opac-detail: 0.4;
+	--input-color-fg: rgb(239, 239, 241);
+	--input-color-bg: rgba(255, 255, 255, 0.2);
+	--input-color-border: transparent;
+
+	border-radius: 6px;
+	border: 2px solid var(--input-color-border);
+	color: var(--input-color-fg);
+	background-color: var(--input-color-bg);
+
+	transition: border 0.1s ease-in, background-color 0.1s ease-in;
+
+	&::-webkit-datetime-edit {
+		//padding: 1em;
+		padding: 0 1px;
+	}
+	&::-webkit-datetime-edit-fields-wrapper {
+		color: inherit;
+	}
+	&::-webkit-datetime-edit-text,
+	&::-webkit-datetime-edit-month-field,
+	&::-webkit-datetime-edit-day-field,
+	&::-webkit-datetime-edit-year-field,
+	&::-webkit-datetime-edit-hour-field,
+	&::-webkit-datetime-edit-minute-field {
+		padding: var(--input-pad-v) calc(var(--input-pad-h) / 2);
+		display: inline-block;
+		color: var(--input-color-fg);
+	}
+	&::-webkit-datetime-edit-text {
+		opacity: var(--input-opac-detail);
+		padding: var(--input-pad-v) 0;
+	}
+	&::-webkit-datetime-edit-month-field,
+	&::-webkit-datetime-edit-day-field,
+	&::-webkit-datetime-edit-year-field,
+	&::-webkit-datetime-edit-hour-field,
+	&::-webkit-datetime-edit-minute-field {
+		padding: var(--input-pad-v) calc(var(--input-pad-h) / 2);
+		display: inline-block;
+		border-radius: 6px;
+
+		&:focus {
+			background-color: rgba(255, 255, 255, 0.05);
+			--input-color-fg: white;
+		}
+	}
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+	&::-webkit-calendar-picker-indicator {
+		opacity: var(--input-opac-detail);
+		cursor: pointer;
+		&:hover {
+			--input-opac-detail: 1;
+		}
+	}
+	&:hover {
+		--input-color-border: rgba(255, 255, 255, 0.2);
+	}
+	&:focus,
+	&:focus-within {
+		--input-color-border: rgba(172, 117, 255, 0.875);
+		--input-color-bg: rgb(0, 0, 0);
+	}
+}
