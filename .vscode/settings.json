@@ -1,14 +1,15 @@
 {
 	"files.exclude": {
-		"**/*-lock.json": true,
+		"**/*-lock.*": true,
 		"**/*.map": true,
 		"**/.cache": true,
 		"**/.DS_Store": true,
 		"**/*.Identifier": true,
 		"**/node_modules": true,
 		"**/.next": true,
-		"next-env.d.ts": false,
-		"**/.gitattributes": false
+		".gitattributes": true,
+		"next-env.d.ts": true,
+		"tsconfig.tsbuildinfo": true
 	},
 	"files.associations": {
 		"**/*.env*": "dotenv",
@@ -19,5 +20,5 @@
 		"**/node_modules": true,
 		"**/.next": true
 	},
-	"cSpell.words": ["browserconfig", "cpsp", "fontsource", "msapplication"]
+	"cSpell.words": ["browserconfig", "clsx", "cpsp", "flexbugs", "fontsource", "msapplication"]
 }
