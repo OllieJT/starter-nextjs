@@ -3,14 +3,14 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps /* , AppContext */ } from "next/app";
 import { DefaultSeo } from "next-seo";
-import { ThemeProvider } from "next-themes";
 
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
+import "@fontsource/inter/variable-full.css";
 
 const isDev = process.env.NODE_ENV === "development";
-const configuration: MetadataConfiguration = {
+const configuration = {
 	color: "#FF00FF",
 
 	site_name: "SiteName",
@@ -114,9 +114,7 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
 				/>
 				<link rel="manifest" href="/manifest.json" />
 			</Head>
-			<ThemeProvider>
-				<Component {...pageProps} />
-			</ThemeProvider>
+			<Component {...pageProps} />
 		</>
 	);
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import type { GetServerSideProps } from "next";
 import { ExampleComponent } from "src/components/example";
 import { InputDateTime } from "$components/input/input-date-time";
 

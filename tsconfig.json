@@ -31,9 +31,7 @@
 		"noFallthroughCasesInSwitch": true,
 		"paths": {
 			"$lib/*": ["src/lib/*"],
-			"$components/*": ["src/components/*"],
-			"$hooks/*": ["src/hooks/*"],
-			"$context/*": ["src/context/*"]
+			"$components/*": ["src/components/*"]
 		},
 		"incremental": true
 	},
