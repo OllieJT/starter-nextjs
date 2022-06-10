@@ -4,11 +4,11 @@
 		"**/*.map": true,
 		"**/.cache": true,
 		"**/.DS_Store": true,
-		"**/.gitattributes": true,
 		"**/*.Identifier": true,
 		"**/node_modules": true,
 		"**/.next": true,
-		"next-env.d.ts": true
+		"next-env.d.ts": false,
+		"**/.gitattributes": false
 	},
 	"files.associations": {
 		"**/*.env*": "dotenv",
