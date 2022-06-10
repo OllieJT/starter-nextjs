@@ -2,46 +2,48 @@
 	"name": "olliejt-starter-nextjs",
 	"version": "0.0.1",
 	"private": true,
-	"license": "NONE",
+	"license": "UNLICENCED",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
 		"email": "hey@olliejt.com",
 		"url": "https://olliejt.com/"
 	},
 	"engines": {
-		"node": "14.x"
+		"node": "16.x"
 	},
 	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
 		"analyze:browser": "BUNDLE_ANALYZE=browser next build",
 		"analyze:server": "BUNDLE_ANALYZE=server next build",
 		"analyze": "ANALYZE=true next build",
-		"build": "next build",
-		"dev": "NODE_ENV=development next dev",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"start": "next start",
-		"ts": "tsc --pretty --noImplicitAny",
-		"lint": "next lint"
+		"ts": "tsc --pretty --noImplicitAny"
 	},
 	"dependencies": {
-		"@fontsource/inter": "^4.5.1",
-		"date-fns": "^2.26.0",
-		"next": "^12.0.4",
-		"next-seo": "^4.28.1",
-		"next-themes": "0.0.15",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-hot-toast": "^2.1.1",
-		"react-icons": "^4.3.1",
-		"sass": "^1.43.4"
+		"@fontsource/inter": "^4.5.11",
+		"@heroicons/react": "^1.0.6",
+		"date-fns": "^2.28.0",
+		"next": "^12.1.6",
+		"next-seo": "^5.4.0",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"react-hot-toast": "^2.2.0",
+		"sass": "^1.52.3"
 	},
 	"devDependencies": {
-		"@next/bundle-analyzer": "^12.0.4",
-		"@types/node": "^16.11.10",
-		"@types/react": "^17.0.36",
-		"autoprefixer": "^10.4.0",
-		"eslint": "^8.3.0",
-		"eslint-config-next": "^12.0.4",
-		"prettier": "^2.4.1",
-		"typescript": "^4.5.2"
+		"@types/react-dom": "18.0.5",
+		"@next/bundle-analyzer": "^12.1.6",
+		"@types/node": "^17.0.41",
+		"@types/react": "^18.0.12",
+		"autoprefixer": "^10.4.7",
+		"eslint": "^8.17.0",
+		"eslint-config-next": "^12.1.6",
+		"prettier": "^2.6.2",
+		"typescript": "^4.7.3",
+		"postcss-flexbugs-fixes": "^5.0.2",
+		"postcss-preset-env": "^7.7.1"
 	}
 }
